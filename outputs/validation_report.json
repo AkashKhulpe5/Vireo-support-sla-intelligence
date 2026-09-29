@@ -1,0 +1,28 @@
+{
+  "source_file": "outputs\\ticket_sla_analysis.csv",
+  "validation_summary": {
+    "total_rows": 11200,
+    "unique_tickets": 11200,
+    "duplicate_ticket_rows": 0,
+    "missing_ticket_ids": 0,
+    "missing_creation_timestamps": 0,
+    "missing_first_response_timestamps": 0,
+    "first_response_before_creation": 0,
+    "unmatched_roster_rows": 0,
+    "breached_tickets": 2440,
+    "resolved_or_closed_breaches": 2320,
+    "unresolved_breaches": 120
+  },
+  "checks": {
+    "ticket_ids_unique": true,
+    "ticket_ids_present": true,
+    "creation_timestamps_present": true,
+    "first_response_timestamps_present": true,
+    "no_first_response_before_creation": true,
+    "all_tickets_roster_matched": true,
+    "breach_flags_binary": true,
+    "breach_count_within_ticket_count": true,
+    "resolved_and_unresolved_breaches_reconcile": true
+  },
+  "all_checks_passed": true
+}
